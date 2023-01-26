@@ -1,6 +1,6 @@
 [![trophy](https://github-profile-trophy.vercel.app/?username=MiChongs)](https://github.com/ryo-ma/github-profile-trophy)
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=MiChongs)](https://github.com/anuraghazra/github-readme-stats)
-
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MiChongs)](https://github.com/anuraghazra/github-readme-stats)
 - 👋 Hi, I’m @MiChongs
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning Kotlin Language
