@@ -1,89 +1,109 @@
-<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">川意 GitHub Profile Banner</title>
-  <desc id="desc">Centered engineering profile banner for the MiChongs GitHub profile.</desc>
+<svg width="1280" height="560" viewBox="0 0 1280 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">川意 Developer Poster Banner</title>
+  <desc id="desc">Dark developer poster style banner for the MiChongs GitHub profile.</desc>
   <defs>
-    <linearGradient id="bg" x1="96" y1="48" x2="1184" y2="372" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#07111D"/>
-      <stop offset="0.5" stop-color="#0B1627"/>
-      <stop offset="1" stop-color="#111827"/>
+    <linearGradient id="bg" x1="72" y1="48" x2="1214" y2="516" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#040B14"/>
+      <stop offset="0.52" stop-color="#081321"/>
+      <stop offset="1" stop-color="#0F172A"/>
     </linearGradient>
-    <radialGradient id="haloA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 96) rotate(90) scale(180 260)">
-      <stop stop-color="#38BDF8" stop-opacity="0.24"/>
+    <radialGradient id="cyanGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 128) rotate(90) scale(210 260)">
+      <stop stop-color="#38BDF8" stop-opacity="0.30"/>
       <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="haloB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1040 322) rotate(90) scale(180 260)">
+    <radialGradient id="greenGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 376) rotate(90) scale(220 260)">
       <stop stop-color="#22C55E" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.7"/>
+    </linearGradient>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#0B2236"/>
-      <stop offset="1" stop-color="#0F172A"/>
+      <stop stop-color="#0A1B2D"/>
+      <stop offset="1" stop-color="#101B31"/>
     </linearGradient>
     <linearGradient id="panelStroke" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#38BDF8" stop-opacity="0.42"/>
-      <stop offset="1" stop-color="#22C55E" stop-opacity="0.2"/>
+      <stop stop-color="#38BDF8" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.18"/>
     </linearGradient>
   </defs>
 
-  <rect x="10" y="10" width="1260" height="400" rx="30" fill="url(#bg)"/>
-  <rect x="10" y="10" width="1260" height="400" rx="30" fill="url(#haloA)"/>
-  <rect x="10" y="10" width="1260" height="400" rx="30" fill="url(#haloB)"/>
+  <rect x="8" y="8" width="1264" height="544" rx="34" fill="url(#bg)"/>
+  <rect x="8" y="8" width="1264" height="544" rx="34" fill="url(#cyanGlow)"/>
+  <rect x="8" y="8" width="1264" height="544" rx="34" fill="url(#greenGlow)"/>
 
   <g opacity="0.08">
-    <path d="M70 90H1210" stroke="white"/>
-    <path d="M70 150H1210" stroke="white"/>
-    <path d="M70 210H1210" stroke="white"/>
-    <path d="M70 270H1210" stroke="white"/>
-    <path d="M70 330H1210" stroke="white"/>
-    <path d="M180 50V370" stroke="white"/>
-    <path d="M320 50V370" stroke="white"/>
-    <path d="M460 50V370" stroke="white"/>
-    <path d="M600 50V370" stroke="white"/>
-    <path d="M740 50V370" stroke="white"/>
-    <path d="M880 50V370" stroke="white"/>
-    <path d="M1020 50V370" stroke="white"/>
-    <path d="M1160 50V370" stroke="white"/>
+    <path d="M72 86H1208" stroke="white"/>
+    <path d="M72 146H1208" stroke="white"/>
+    <path d="M72 206H1208" stroke="white"/>
+    <path d="M72 266H1208" stroke="white"/>
+    <path d="M72 326H1208" stroke="white"/>
+    <path d="M72 386H1208" stroke="white"/>
+    <path d="M72 446H1208" stroke="white"/>
+    <path d="M146 50V510" stroke="white"/>
+    <path d="M246 50V510" stroke="white"/>
+    <path d="M346 50V510" stroke="white"/>
+    <path d="M446 50V510" stroke="white"/>
+    <path d="M546 50V510" stroke="white"/>
+    <path d="M646 50V510" stroke="white"/>
+    <path d="M746 50V510" stroke="white"/>
+    <path d="M846 50V510" stroke="white"/>
+    <path d="M946 50V510" stroke="white"/>
+    <path d="M1046 50V510" stroke="white"/>
+    <path d="M1146 50V510" stroke="white"/>
   </g>
 
-  <circle cx="640" cy="210" r="132" fill="#0A1626" fill-opacity="0.6" stroke="#38BDF8" stroke-opacity="0.16"/>
-  <circle cx="640" cy="210" r="156" stroke="#22C55E" stroke-opacity="0.08"/>
-
-  <text x="640" y="108" text-anchor="middle" fill="#7DD3FC" font-family="Microsoft YaHei, PingFang SC, Noto Sans SC, Segoe UI, sans-serif" font-size="18" font-weight="700" letter-spacing="0.3em">GITHUB PROFILE</text>
-  <text x="640" y="196" text-anchor="middle" fill="#F8FAFC" font-family="Microsoft YaHei, PingFang SC, Noto Sans SC, Segoe UI, sans-serif" font-size="76" font-weight="800">川意</text>
-  <text x="640" y="236" text-anchor="middle" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">MiChongs</text>
-  <text x="640" y="272" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, PingFang SC, Noto Sans SC, Segoe UI, sans-serif" font-size="22" font-weight="500">长江工程职业技术学院</text>
-  <text x="640" y="308" text-anchor="middle" fill="#A5B4C3" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">Go Backend · Kotlin Explorer · Multi-tenant Systems</text>
+  <text x="92" y="78" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="0.32em">DEVELOPER POSTER / 2026</text>
+  <text x="92" y="172" fill="#F8FAFC" font-family="Microsoft YaHei, PingFang SC, Noto Sans SC, Segoe UI, sans-serif" font-size="108" font-weight="800">川意</text>
+  <text x="96" y="214" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="0.14em">MICHONGS</text>
+  <text x="92" y="264" fill="#CBD5E1" font-family="Microsoft YaHei, PingFang SC, Noto Sans SC, Segoe UI, sans-serif" font-size="28" font-weight="600">长江工程职业技术学院</text>
+  <text x="92" y="318" fill="#A5B4C3" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="500">Go Backend Builder / Kotlin Explorer / Platform-oriented Engineering</text>
+  <text x="92" y="360" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Building high-performance systems with clean boundaries, stable architecture, and maintainable service design.</text>
 
   <g>
-    <rect x="92" y="118" width="188" height="92" rx="24" fill="url(#panel)" stroke="url(#panelStroke)"/>
-    <text x="126" y="154" fill="#86EFAC" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">CURRENT FOCUS</text>
-    <text x="126" y="186" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">Go + PgSQL</text>
-  </g>
-
-  <g>
-    <rect x="92" y="224" width="188" height="92" rx="24" fill="url(#panel)" stroke="url(#panelStroke)"/>
-    <text x="126" y="260" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">ARCHITECTURE</text>
-    <text x="126" y="292" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">Low Coupling</text>
+    <rect x="92" y="404" width="172" height="82" rx="22" fill="url(#panel)" stroke="url(#panelStroke)"/>
+    <text x="122" y="438" fill="#86EFAC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em">FOCUS</text>
+    <text x="122" y="470" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Go / PgSQL</text>
   </g>
 
   <g>
-    <rect x="1000" y="118" width="188" height="92" rx="24" fill="url(#panel)" stroke="url(#panelStroke)"/>
-    <text x="1034" y="154" fill="#86EFAC" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">FLAGSHIP</text>
-    <text x="1034" y="186" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">Aegis</text>
+    <rect x="284" y="404" width="172" height="82" rx="22" fill="url(#panel)" stroke="url(#panelStroke)"/>
+    <text x="314" y="438" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em">SYSTEM</text>
+    <text x="314" y="470" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Aegis</text>
   </g>
 
   <g>
-    <rect x="1000" y="224" width="188" height="92" rx="24" fill="url(#panel)" stroke="url(#panelStroke)"/>
-    <text x="1034" y="260" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">DIRECTION</text>
-    <text x="1034" y="292" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">Platform</text>
+    <rect x="476" y="404" width="192" height="82" rx="22" fill="url(#panel)" stroke="url(#panelStroke)"/>
+    <text x="506" y="438" fill="#86EFAC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em">ARCHITECTURE</text>
+    <text x="506" y="470" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Low Coupling</text>
   </g>
 
+  <g opacity="0.16">
+    <text x="822" y="252" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="210" font-weight="800">MI</text>
+    <text x="782" y="430" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="186" font-weight="800">CH</text>
+  </g>
+
+  <path d="M770 118L1132 118" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M770 150L1090 150" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+  <path d="M770 182L1166 182" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+
+  <path d="M844 258L1138 86" stroke="#38BDF8" stroke-opacity="0.34" stroke-width="16" stroke-linecap="round"/>
+  <path d="M888 342L1182 170" stroke="#22C55E" stroke-opacity="0.26" stroke-width="14" stroke-linecap="round"/>
+  <path d="M808 388L1098 218" stroke="#F8FAFC" stroke-opacity="0.10" stroke-width="8" stroke-linecap="round"/>
+
+  <circle cx="1104" cy="120" r="54" stroke="#38BDF8" stroke-opacity="0.28" stroke-width="2"/>
+  <circle cx="1104" cy="120" r="76" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="976" cy="354" r="78" stroke="#22C55E" stroke-opacity="0.14" stroke-width="2"/>
+  <circle cx="1142" cy="294" r="22" fill="#38BDF8" fill-opacity="0.18"/>
+  <circle cx="866" cy="216" r="12" fill="#22C55E" fill-opacity="0.24"/>
+
   <g>
-    <rect x="458" y="344" width="112" height="30" rx="15" fill="#0A2236" stroke="#38BDF8" stroke-opacity="0.35"/>
-    <text x="514" y="364" text-anchor="middle" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Go</text>
-    <rect x="584" y="344" width="112" height="30" rx="15" fill="#0A2236" stroke="#38BDF8" stroke-opacity="0.3"/>
-    <text x="640" y="364" text-anchor="middle" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Kotlin</text>
-    <rect x="710" y="344" width="112" height="30" rx="15" fill="#0A2236" stroke="#22C55E" stroke-opacity="0.3"/>
-    <text x="766" y="364" text-anchor="middle" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">PostgreSQL</text>
+    <rect x="878" y="438" width="102" height="30" rx="15" fill="#0A2236" stroke="#38BDF8" stroke-opacity="0.35"/>
+    <text x="929" y="458" text-anchor="middle" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Go</text>
+    <rect x="994" y="438" width="102" height="30" rx="15" fill="#0A2236" stroke="#38BDF8" stroke-opacity="0.3"/>
+    <text x="1045" y="458" text-anchor="middle" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Kotlin</text>
+    <rect x="1110" y="438" width="116" height="30" rx="15" fill="#0A2236" stroke="#22C55E" stroke-opacity="0.3"/>
+    <text x="1168" y="458" text-anchor="middle" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">PostgreSQL</text>
   </g>
 </svg>
