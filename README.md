@@ -18,11 +18,6 @@
   <tr>
     <td width="58%" valign="top">
       <p>
-        我是川意，关注高性能后端、平台架构、多应用系统与开发者工具链。<br/>
-        当前主要围绕 Go、Gin、PostgreSQL、Redis、NATS 与 Temporal 进行服务端工程实践。<br/>
-        目标是把系统做得更清晰、更稳定，也更适合长期演进。
-      </p>
-      <p>
         <img src="https://img.shields.io/badge/Direction-Platform%20Engineering-0F172A?style=flat-square&logo=github&logoColor=white" alt="Direction" />
         <img src="https://img.shields.io/badge/Style-Low%20Coupling-0F172A?style=flat-square&logo=buffer&logoColor=white" alt="Style" />
         <img src="https://img.shields.io/badge/Target-High%20Concurrency-0F172A?style=flat-square&logo=apachespark&logoColor=white" alt="Target" />
