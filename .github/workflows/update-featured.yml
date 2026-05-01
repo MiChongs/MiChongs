@@ -1,0 +1,44 @@
+name: Update Featured Projects
+
+on:
+  schedule:
+    - cron: "37 */6 * * *"  # every 6h, offset 37min
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-featured.yml"
+      - ".github/scripts/update_featured.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-featured
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sort projects by stars and rewrite README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_featured.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No README changes."
+            exit 0
+          fi
+          git commit -m "chore(featured): refresh project order by stars [skip ci]"
+          git push

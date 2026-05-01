@@ -99,33 +99,21 @@
 ============================================================ -->
 ## Featured Projects
 
-### [aegis](https://github.com/MiChongs/aegis)
+> Auto-sorted by stars · refreshed every 6h via GitHub Actions
 
-High-performance multi-tenant user platform with workflow orchestration.
+<!-- FEATURED:START -->
 
-<p>
-  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/aegis?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/aegis?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/aegis?style=flat-square&logo=go&logoColor=white&color=00ADD8&labelColor=0d1117" />
-  <img alt="Code Size" src="https://img.shields.io/github/languages/code-size/MiChongs/aegis?style=flat-square&label=Size&color=38BDF8&labelColor=0d1117" />
-</p>
+### [sing-box](https://github.com/MiChongs/sing-box)
 
-`Go` &middot; `Gin` &middot; `PostgreSQL` &middot; `Redis` &middot; `NATS` &middot; `Temporal`
-
----
-
-### [Leaf-IDE](https://github.com/MiChongs/Leaf-IDE)
-
-Modern Android IDE supporting web and native projects.
+The universal proxy platform — personal fork tracking upstream.
 
 <p>
-  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/Leaf-IDE?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
-  <img alt="Forks" src="https://img.shields.io/github/forks/MiChongs/Leaf-IDE?style=flat-square&logo=github&logoColor=white&label=Forks&color=22C55E&labelColor=0d1117" />
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/Leaf-IDE?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/Leaf-IDE?style=flat-square&logo=kotlin&logoColor=white&color=7F52FF&labelColor=0d1117" />
+  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/sing-box?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/sing-box?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/sing-box?style=flat-square&logo=go&logoColor=white&color=00ADD8&labelColor=0d1117" />
 </p>
 
-`Kotlin` &middot; `Android`
+`Go` &middot; `Networking` &middot; `Proxy`
 
 ---
 
@@ -143,6 +131,20 @@ User authentication and management system.
 
 ---
 
+### [aegis](https://github.com/MiChongs/aegis)
+
+High-performance multi-tenant user platform with workflow orchestration.
+
+<p>
+  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/aegis?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/aegis?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/aegis?style=flat-square&logo=go&logoColor=white&color=00ADD8&labelColor=0d1117" />
+</p>
+
+`Go` &middot; `Gin` &middot; `PostgreSQL` &middot; `Redis` &middot; `NATS` &middot; `Temporal`
+
+---
+
 ### [box.app](https://github.com/MiChongs/box.app)
 
 Android application project.
@@ -150,10 +152,26 @@ Android application project.
 <p>
   <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/box.app?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
   <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/box.app?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/box.app?style=flat-square&logoColor=white&color=38BDF8&labelColor=0d1117" />
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/box.app?style=flat-square&logo=kotlin&logoColor=white&color=7F52FF&labelColor=0d1117" />
 </p>
 
 `Kotlin` &middot; `Android`
+
+---
+
+### [Leaf-IDE](https://github.com/MiChongs/Leaf-IDE)
+
+Modern Android IDE supporting web and native projects.
+
+<p>
+  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/Leaf-IDE?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/Leaf-IDE?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/Leaf-IDE?style=flat-square&logo=kotlin&logoColor=white&color=7F52FF&labelColor=0d1117" />
+</p>
+
+`Kotlin` &middot; `Android`
+
+<!-- FEATURED:END -->
 
 <br/>
 
