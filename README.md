@@ -1,164 +1,167 @@
+<!-- ===========================================================
+     HEADER · Waving capsule with refined gradient
+=========================================================== -->
 <a href="https://github.com/MiChongs">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,50:6366F1,100:8B5CF6&height=220&section=header&text=MiChongs%20%C2%B7%20%E5%B7%9D%E6%84%8F&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Performance%20First%20%C2%B7%20Modern%20Service%20Engineering&descSize=18&descAlignY=62" alt="header" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,50:6366F1,100:8B5CF6&height=220&section=header&text=Xu%20Guo&fontSize=68&fontColor=ffffff&fontAlignY=38&desc=Backend%20Engineer%20%C2%B7%20Multi-tenant%20Platforms&descSize=18&descAlignY=64&animation=fadeIn" alt="header" width="100%" />
 </a>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1100&color=38BDF8&center=true&vCenter=true&width=980&lines=Hi+there%2C+I'm+MiChongs+%F0%9F%91%8B;Go+Backend+Builder+%C2%B7+Kotlin+Explorer;Crafting+High-Concurrency+Platforms;Designing+Low-Coupling+Systems" alt="Typing SVG" />
-</p>
-
+<!-- ===========================================================
+     METRICS · Real GitHub data via shields.io & komarev
+=========================================================== -->
 <p align="center">
   <a href="https://github.com/MiChongs?tab=followers">
-    <img src="https://img.shields.io/github/followers/MiChongs?style=for-the-badge&logo=github&logoColor=white&label=Followers&color=0EA5E9&labelColor=020617" alt="followers" />
+    <img alt="Followers" src="https://img.shields.io/github/followers/MiChongs?style=for-the-badge&logo=github&logoColor=white&label=Followers&color=0EA5E9&labelColor=0d1117" />
   </a>
-  <a href="https://github.com/MiChongs">
-    <img src="https://komarev.com/ghpvc/?username=MiChongs&style=for-the-badge&color=22C55E&label=Profile+Views&base=2000" alt="profile views" />
+  <img alt="Profile Views" src="https://komarev.com/ghpvc/?username=MiChongs&style=for-the-badge&color=22C55E&label=Profile+Views" />
+  <a href="https://github.com/MiChongs?tab=stars">
+    <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs?style=for-the-badge&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
   </a>
-  <a href="https://github.com/MiChongs?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-Explore-8B5CF6?style=for-the-badge&logo=git&logoColor=white&labelColor=020617" alt="repos" />
+  <a href="https://www.ycptu.edu.cn/">
+    <img alt="University" src="https://img.shields.io/badge/Yuncheng%20VTU-Student-EC4899?style=for-the-badge&logo=googlescholar&logoColor=white&labelColor=0d1117" />
   </a>
 </p>
 
-<!-- ===== ABOUT ===== -->
-<h2 align="center">▍ About</h2>
+<br/>
 
-<table align="center">
+<!-- ===========================================================
+     ABOUT · Two-column with stats card
+=========================================================== -->
+<table align="center" border="0">
   <tr>
-    <td valign="top" width="55%">
+    <td valign="top" width="58%">
+      <h2>About</h2>
       <p>
-        🛠 <b>Platform Engineer</b> focused on multi-tenant backend platforms<br/>
-        🌊 Building <a href="https://github.com/MiChongs/aegis">aegis</a> — a high-performance user platform<br/>
-        ⚙️ Style: <i>low coupling · high concurrency · clear boundaries</i><br/>
-        📚 Currently exploring: distributed workflows & service mesh<br/>
-        💬 Reach me via <a href="https://github.com/MiChongs">GitHub</a>
+        Backend engineer focused on
+        <b>multi-tenant platform architecture</b> and
+        <b>Android tooling</b>. Currently building
+        <a href="https://github.com/MiChongs/aegis"><b>aegis</b></a>,
+        a high-performance user platform with workflow orchestration.
       </p>
+      <ul>
+        <li><b>Approach</b> &nbsp; low coupling · high concurrency · clear boundaries</li>
+        <li><b>Exploring</b> &nbsp; distributed workflows · service mesh · system proxies</li>
+        <li><b>Location</b> &nbsp; Yuncheng, Shanxi, China</li>
+      </ul>
     </td>
-    <td valign="middle" width="45%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=MiChongs&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&bg_color=0d1117&title_color=38BDF8&icon_color=8B5CF6" height="170" alt="stats" />
+    <td valign="middle" width="42%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=MiChongs&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&icon_color=8B5CF6&include_all_commits=true&count_private=true" alt="github stats" />
     </td>
   </tr>
 </table>
 
-<!-- ===== TECH STACK ===== -->
-<h2 align="center">▍ Tech Stack</h2>
+<!-- ===========================================================
+     TECH STACK · Three balanced columns
+=========================================================== -->
+## Tech Stack
 
-<table align="center">
+<table align="center" border="0">
   <tr>
-    <td align="center" width="25%">
-      <b>Languages</b><br/><br/>
-      <img src="https://skillicons.dev/icons?i=go,kotlin,ts,js,java&theme=dark" />
+    <td valign="top" width="33%" align="center">
+      <h4>Languages</h4>
+      <img src="https://skillicons.dev/icons?i=go,kotlin,rust,ts,java&theme=dark&perline=5" alt="languages" />
     </td>
-    <td align="center" width="25%">
-      <b>Backend</b><br/><br/>
-      <img src="https://skillicons.dev/icons?i=nodejs,express,spring&theme=dark" />
-      <br/><br/>
-      <img src="https://img.shields.io/badge/Gin-00ADD8?style=flat-square&logo=go&logoColor=white" />
-      <img src="https://img.shields.io/badge/Temporal-141414?style=flat-square&logo=temporal&logoColor=white" />
+    <td valign="top" width="33%" align="center">
+      <h4>Backend &amp; Data</h4>
+      <img src="https://skillicons.dev/icons?i=postgres,redis,mysql&theme=dark&perline=3" alt="data" /><br/><br/>
+      <img src="https://img.shields.io/badge/Gin-00ADD8?style=flat-square&logo=go&logoColor=white" alt="gin" />
+      <img src="https://img.shields.io/badge/NATS-27AAE1?style=flat-square&logo=natsdotio&logoColor=white" alt="nats" />
+      <img src="https://img.shields.io/badge/Temporal-141414?style=flat-square&logo=temporal&logoColor=white" alt="temporal" />
     </td>
-    <td align="center" width="25%">
-      <b>Data</b><br/><br/>
-      <img src="https://skillicons.dev/icons?i=postgres,redis,mysql,mongodb&theme=dark" />
-      <br/><br/>
-      <img src="https://img.shields.io/badge/NATS-27AAE1?style=flat-square&logo=natsdotio&logoColor=white" />
-    </td>
-    <td align="center" width="25%">
-      <b>DevOps</b><br/><br/>
-      <img src="https://skillicons.dev/icons?i=docker,linux,git,github,nginx&theme=dark" />
+    <td valign="top" width="33%" align="center">
+      <h4>Mobile &amp; DevOps</h4>
+      <img src="https://skillicons.dev/icons?i=androidstudio,docker,linux,git,github&theme=dark&perline=5" alt="devops" />
     </td>
   </tr>
 </table>
 
-<!-- ===== FEATURED ===== -->
-<h2 align="center">▍ Featured Systems</h2>
+<!-- ===========================================================
+     FEATURED · 2x2 pinned repo grid
+=========================================================== -->
+## Featured Projects
 
-<p align="center">
-  <a href="https://github.com/MiChongs/aegis">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=aegis&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&icon_color=8B5CF6" />
-  </a>
-  <a href="https://github.com/MiChongs/user_system">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=user_system&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&icon_color=8B5CF6" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/MiChongs/Leaf-IDE">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=Leaf-IDE&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&icon_color=8B5CF6" />
-  </a>
-  <a href="https://github.com/MiChongs/manus-contribution-bot">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=manus-contribution-bot&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&icon_color=8B5CF6" />
-  </a>
-</p>
+<table align="center" border="0">
+  <tr>
+    <td>
+      <a href="https://github.com/MiChongs/aegis">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=aegis&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&icon_color=8B5CF6" alt="aegis" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/MiChongs/user_system">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=user_system&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&icon_color=8B5CF6" alt="user_system" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/MiChongs/Leaf-IDE">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=Leaf-IDE&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&icon_color=8B5CF6" alt="Leaf-IDE" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/MiChongs/box.app">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=MiChongs&repo=box.app&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&icon_color=8B5CF6" alt="box.app" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 <details align="center">
-<summary><b>📋 More about featured systems</b></summary>
+<summary><b>Project details</b></summary>
 <br/>
 <table align="center">
-  <tr>
-    <th>Project</th>
-    <th>Description</th>
-    <th>Stack</th>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/MiChongs/aegis">aegis</a></td>
-    <td>高性能多租户用户平台</td>
-    <td>Go · Gin · PostgreSQL · Redis · NATS · Temporal</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/MiChongs/user_system">user_system</a></td>
-    <td>用户认证架构工程沉淀</td>
-    <td>Node.js · Express · MySQL · Redis</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/MiChongs/Leaf-IDE">Leaf-IDE</a></td>
-    <td>面向 Android 的现代 IDE</td>
-    <td>Kotlin · Android</td>
-  </tr>
+  <thead>
+    <tr><th>Project</th><th>Description</th><th>Stack</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/MiChongs/aegis"><b>aegis</b></a></td>
+      <td>High-performance multi-tenant user platform with workflow orchestration</td>
+      <td>Go, Gin, PostgreSQL, Redis, NATS, Temporal</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/MiChongs/user_system"><b>user_system</b></a></td>
+      <td>User authentication and management system</td>
+      <td>Backend, MySQL, Redis</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/MiChongs/Leaf-IDE"><b>Leaf-IDE</b></a></td>
+      <td>Modern Android IDE supporting web and native projects</td>
+      <td>Kotlin, Android</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/MiChongs/box.app"><b>box.app</b></a></td>
+      <td>Android application project</td>
+      <td>Kotlin, Android</td>
+    </tr>
+  </tbody>
 </table>
 </details>
 
-<!-- ===== INSIGHT WALL ===== -->
-<h2 align="center">▍ Insight Wall</h2>
+<!-- ===========================================================
+     STATISTICS · Streak + Top languages + Activity graph
+=========================================================== -->
+## Statistics
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=MiChongs&theme=tokyonight&hide_border=true&background=0d1117&ring=8B5CF6&fire=F472B6&currStreakLabel=38BDF8" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiChongs&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&langs_count=8" height="180" />
+  <img src="https://streak-stats.demolab.com?user=MiChongs&theme=tokyonight&hide_border=true&background=0d1117&ring=8B5CF6&fire=F472B6&currStreakLabel=38BDF8&dates=cbd5e1&sideLabels=8B5CF6&sideNums=ffffff" height="180" alt="streak" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiChongs&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&langs_count=8" height="180" alt="top languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MiChongs&theme=tokyonight" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MiChongs&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity&bg_color=0d1117&color=38BDF8&line=8B5CF6&point=F472B6&title_color=38BDF8" alt="activity graph" />
 </p>
+
+<!-- ===========================================================
+     ACHIEVEMENTS · GitHub trophies
+=========================================================== -->
+## Achievements
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MiChongs&theme=tokyonight" height="180" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MiChongs&theme=tokyonight" height="180" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MiChongs&theme=tokyonight&utcOffset=8" height="180" />
+  <img src="https://github-profile-trophy.vercel.app/?username=MiChongs&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=12&margin-h=12" alt="trophies" />
 </p>
 
-<!-- ===== ACTIVITY ===== -->
-<h2 align="center">▍ Activity Graph</h2>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MiChongs&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Trail" />
-</p>
-
-<!-- ===== TROPHY ===== -->
-<h2 align="center">▍ Trophies</h2>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=MiChongs&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=12&margin-h=12" />
-</p>
-
-<!-- ===== CONTACT ===== -->
-<h2 align="center">▍ Contact</h2>
-
-<p align="center">
-  <a href="https://github.com/MiChongs">
-    <img src="https://img.shields.io/badge/GitHub-MiChongs-020617?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
-
-<!-- ===== FOOTER ===== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,50:6366F1,100:0EA5E9&height=140&section=footer" width="100%" />
-
-<p align="center">
-  <sub>⚡ Performance first · Clear boundaries · Modern service engineering ⚡</sub>
-</p>
+<!-- ===========================================================
+     FOOTER · Reverse gradient waving capsule
+=========================================================== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,50:6366F1,100:0EA5E9&height=120&section=footer&animation=fadeIn" width="100%" alt="footer" />
