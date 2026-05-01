@@ -34,38 +34,38 @@
 <br/>
 
 <!-- ============================================================
-     TECH STACK  ·  Compact icon array, auto-wrap on mobile
-                    Spaces between groups create visual hint
+     TECH STACK  ·  shields.io for-the-badge style
+                    Inline-block badges naturally wrap on mobile
 ============================================================ -->
 ## Tech Stack
 
 <p align="center">
-  <a title="Go"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" width="42" height="42" alt="Go" /></a>
-  <a title="Kotlin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original-wordmark.svg" width="42" height="42" alt="Kotlin" /></a>
-  <a title="Rust"><img src="https://cdn.simpleicons.org/rust/CE422B" width="42" height="42" alt="Rust" /></a>
-  <a title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="42" height="42" alt="TypeScript" /></a>
-  <a title="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="42" height="42" alt="Java" /></a>
-  &nbsp;
-  <a title="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="42" height="42" alt="PostgreSQL" /></a>
-  <a title="Redis"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" width="42" height="42" alt="Redis" /></a>
-  <a title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="42" height="42" alt="MySQL" /></a>
-  &nbsp;
-  <a title="Android"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain-wordmark.svg" width="42" height="42" alt="Android" /></a>
-  <a title="Jetpack Compose"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" width="42" height="42" alt="Jetpack Compose" /></a>
-  <a title="Gradle"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg" width="42" height="42" alt="Gradle" /></a>
-  &nbsp;
-  <a title="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="42" height="42" alt="Docker" /></a>
-  <a title="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="42" height="42" alt="Linux" /></a>
-  <a title="Nginx"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" width="42" height="42" alt="Nginx" /></a>
-  <a title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="42" height="42" alt="Git" /></a>
-  <a title="GitHub Actions"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="42" height="42" alt="GitHub Actions" /></a>
+  <img alt="Go"         src="https://img.shields.io/badge/-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img alt="Kotlin"     src="https://img.shields.io/badge/-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+  <img alt="Rust"       src="https://img.shields.io/badge/-Rust-CE422B?style=for-the-badge&logo=rust&logoColor=white" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="Java"       src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Gin-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Gin" />
-  <img src="https://img.shields.io/badge/NATS-27AAE1?style=flat-square&logo=natsdotio&logoColor=white" alt="NATS" />
-  <img src="https://img.shields.io/badge/Temporal-141414?style=flat-square&logo=temporal&logoColor=white" alt="Temporal" />
-  <img src="https://img.shields.io/badge/gRPC-00ADD8?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
+  <img alt="Gin"        src="https://img.shields.io/badge/-Gin-00ADD8?style=for-the-badge&logo=gin&logoColor=white" />
+  <img alt="gRPC"       src="https://img.shields.io/badge/-gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white" />
+  <img alt="Temporal"   src="https://img.shields.io/badge/-Temporal-141414?style=for-the-badge&logo=temporal&logoColor=white" />
+  <img alt="NATS"       src="https://img.shields.io/badge/-NATS-27AAE1?style=for-the-badge&logo=natsdotio&logoColor=white" />
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img alt="Redis"      src="https://img.shields.io/badge/-Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+  <img alt="MySQL"      src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+</p>
+
+<p align="center">
+  <img alt="Android"          src="https://img.shields.io/badge/-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img alt="Jetpack Compose"  src="https://img.shields.io/badge/-Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
+  <img alt="Gradle"           src="https://img.shields.io/badge/-Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" />
+  <img alt="Docker"           src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img alt="Linux"            src="https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img alt="Nginx"            src="https://img.shields.io/badge/-Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  <img alt="Git"              src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img alt="GitHub Actions"   src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
 </p>
 
 <br/>
