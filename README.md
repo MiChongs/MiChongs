@@ -85,7 +85,7 @@
     <td align="left">
       <a title="Go"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" width="48" height="48" alt="Go" /></a>&nbsp;&nbsp;
       <a title="Kotlin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original-wordmark.svg" width="48" height="48" alt="Kotlin" /></a>&nbsp;&nbsp;
-      <a title="Rust"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-plain.svg" width="48" height="48" alt="Rust" /></a>&nbsp;&nbsp;
+      <a title="Rust"><img src="https://cdn.simpleicons.org/rust/CE422B" width="48" height="48" alt="Rust" /></a>&nbsp;&nbsp;
       <a title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" /></a>&nbsp;&nbsp;
       <a title="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="48" height="48" alt="Java" /></a>
     </td>
