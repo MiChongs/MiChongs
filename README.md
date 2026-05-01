@@ -16,7 +16,7 @@
 </p>
 
 <!-- ============================================================
-     INTRO  ·  one-line elevator pitch
+     INTRO
 ============================================================ -->
 <p align="center">
   <em>Building <a href="https://github.com/MiChongs/aegis"><b>aegis</b></a> &mdash; a high-performance multi-tenant user platform with workflow orchestration.</em>
@@ -34,69 +34,67 @@
 <br/>
 
 <!-- ============================================================
-     GITHUB STATS  ·  single card, mobile-friendly width
-============================================================ -->
-## GitHub Stats
-
-<p align="center">
-  <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=MiChongs&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&icon_color=8B5CF6&include_all_commits=true&count_private=true&card_width=480&cache_seconds=86400" />
-</p>
-
-<br/>
-
-<!-- ============================================================
-     TECH STACK  ·  single-column groups, devicon real logos
+     TECH STACK  ·  Compact icon array, auto-wrap on mobile
+                    Spaces between groups create visual hint
 ============================================================ -->
 ## Tech Stack
 
-<p>
-  <sub><b>Languages</b></sub>
-</p>
-<p>
-  <a title="Go"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" width="44" height="44" alt="Go" /></a>
-  <a title="Kotlin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original-wordmark.svg" width="44" height="44" alt="Kotlin" /></a>
-  <a title="Rust"><img src="https://cdn.simpleicons.org/rust/CE422B" width="44" height="44" alt="Rust" /></a>
-  <a title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="44" height="44" alt="TypeScript" /></a>
-  <a title="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="44" height="44" alt="Java" /></a>
-</p>
-
-<p>
-  <sub><b>Backend &amp; Data</b></sub>
-</p>
-<p>
-  <a title="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="44" height="44" alt="PostgreSQL" /></a>
-  <a title="Redis"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" width="44" height="44" alt="Redis" /></a>
-  <a title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="44" height="44" alt="MySQL" /></a>
-  <a title="Gin"><img src="https://img.shields.io/badge/Gin-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Gin" /></a>
-  <a title="NATS"><img src="https://img.shields.io/badge/NATS-27AAE1?style=for-the-badge&logo=natsdotio&logoColor=white" alt="NATS" /></a>
-  <a title="Temporal"><img src="https://img.shields.io/badge/Temporal-141414?style=for-the-badge&logo=temporal&logoColor=white" alt="Temporal" /></a>
-</p>
-
-<p>
-  <sub><b>Mobile</b></sub>
-</p>
-<p>
-  <a title="Android"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain-wordmark.svg" width="44" height="44" alt="Android" /></a>
-  <a title="Android Studio"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" width="44" height="44" alt="Android Studio" /></a>
-  <a title="Jetpack Compose"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" width="44" height="44" alt="Jetpack Compose" /></a>
-  <a title="Gradle"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg" width="44" height="44" alt="Gradle" /></a>
+<p align="center">
+  <a title="Go"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" width="42" height="42" alt="Go" /></a>
+  <a title="Kotlin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original-wordmark.svg" width="42" height="42" alt="Kotlin" /></a>
+  <a title="Rust"><img src="https://cdn.simpleicons.org/rust/CE422B" width="42" height="42" alt="Rust" /></a>
+  <a title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="42" height="42" alt="TypeScript" /></a>
+  <a title="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="42" height="42" alt="Java" /></a>
+  &nbsp;
+  <a title="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="42" height="42" alt="PostgreSQL" /></a>
+  <a title="Redis"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" width="42" height="42" alt="Redis" /></a>
+  <a title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="42" height="42" alt="MySQL" /></a>
+  &nbsp;
+  <a title="Android"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain-wordmark.svg" width="42" height="42" alt="Android" /></a>
+  <a title="Jetpack Compose"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" width="42" height="42" alt="Jetpack Compose" /></a>
+  <a title="Gradle"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg" width="42" height="42" alt="Gradle" /></a>
+  &nbsp;
+  <a title="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="42" height="42" alt="Docker" /></a>
+  <a title="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="42" height="42" alt="Linux" /></a>
+  <a title="Nginx"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" width="42" height="42" alt="Nginx" /></a>
+  <a title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="42" height="42" alt="Git" /></a>
+  <a title="GitHub Actions"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="42" height="42" alt="GitHub Actions" /></a>
 </p>
 
-<p>
-  <sub><b>DevOps</b></sub>
-</p>
-<p>
-  <a title="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="44" height="44" alt="Docker" /></a>
-  <a title="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="44" height="44" alt="Linux" /></a>
-  <a title="Nginx"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" width="44" height="44" alt="Nginx" /></a>
-  <a title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="44" height="44" alt="Git" /></a>
-  <a title="GitHub Actions"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="44" height="44" alt="GitHub Actions" /></a>
+<p align="center">
+  <img src="https://img.shields.io/badge/Gin-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Gin" />
+  <img src="https://img.shields.io/badge/NATS-27AAE1?style=flat-square&logo=natsdotio&logoColor=white" alt="NATS" />
+  <img src="https://img.shields.io/badge/Temporal-141414?style=flat-square&logo=temporal&logoColor=white" alt="Temporal" />
+  <img src="https://img.shields.io/badge/gRPC-00ADD8?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
 </p>
 
 <br/>
 
 <!-- ============================================================
-     FEATURED PROJECTS  ·  single-column markdown cards
+     METRICS  ·  Static SVGs generated by lowlighter/metrics
+                 Action runs every 12h, no runtime dependency
+============================================================ -->
+## GitHub Metrics
+
+<p align="center">
+  <img alt="Metrics" src="https://raw.githubusercontent.com/MiChongs/MiChongs/main/metrics.svg" />
+</p>
+
+<details>
+<summary><b>Contribution calendar &amp; language deep dive</b></summary>
+<br/>
+<p align="center">
+  <img alt="Contribution Calendar" src="https://raw.githubusercontent.com/MiChongs/MiChongs/main/metrics-calendar.svg" />
+</p>
+<p align="center">
+  <img alt="Languages Distribution" src="https://raw.githubusercontent.com/MiChongs/MiChongs/main/metrics-languages.svg" />
+</p>
+</details>
+
+<br/>
+
+<!-- ============================================================
+     FEATURED PROJECTS  ·  Single-column markdown cards
                           with shields.io real-time data
 ============================================================ -->
 ## Featured Projects
@@ -156,17 +154,6 @@ Android application project.
 </p>
 
 `Kotlin` &middot; `Android`
-
-<br/>
-
-<!-- ============================================================
-     MOST USED LANGUAGES  ·  compact card with cache
-============================================================ -->
-## Most Used Languages
-
-<p align="center">
-  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiChongs&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&langs_count=8&card_width=480&cache_seconds=86400" />
-</p>
 
 <br/>
 
