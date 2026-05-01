@@ -1,0 +1,92 @@
+name: Cache Stats SVGs
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"  # every 6 hours, offset 17min to dodge peak
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cache-stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cache-stats
+  cancel-in-progress: true
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch SVG cards with retry
+        run: |
+          set -e
+          mkdir -p assets
+
+          USER="MiChongs"
+          THEME_BASE="theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38BDF8&text_color=cbd5e1&icon_color=8B5CF6"
+
+          fetch() {
+            local url="$1"
+            local out="$2"
+            for i in 1 2 3 4 5; do
+              if curl --fail --silent --show-error --max-time 30 -L -o "$out.tmp" "$url"; then
+                if [ -s "$out.tmp" ] && head -c 5 "$out.tmp" | grep -q "<"; then
+                  mv "$out.tmp" "$out"
+                  echo "OK  $out"
+                  return 0
+                fi
+              fi
+              echo "RETRY $i: $out"
+              sleep $((i * 5))
+            done
+            rm -f "$out.tmp"
+            echo "FAIL $out (kept previous if exists)"
+            return 0
+          }
+
+          # Main stats card
+          fetch "https://github-readme-stats.vercel.app/api?username=${USER}&show_icons=true&rank_icon=github&include_all_commits=true&count_private=true&${THEME_BASE}" \
+                "assets/stats.svg"
+
+          # Top languages
+          fetch "https://github-readme-stats.vercel.app/api/top-langs/?username=${USER}&layout=compact&langs_count=8&${THEME_BASE}" \
+                "assets/top-langs.svg"
+
+          # Pinned repos
+          for REPO in aegis user_system Leaf-IDE box.app; do
+            fetch "https://github-readme-stats.vercel.app/api/pin/?username=${USER}&repo=${REPO}&${THEME_BASE}" \
+                  "assets/pin-${REPO}.svg"
+          done
+
+          # Streak (demolab)
+          fetch "https://streak-stats.demolab.com?user=${USER}&theme=tokyonight&hide_border=true&background=0d1117&ring=8B5CF6&fire=F472B6&currStreakLabel=38BDF8&dates=cbd5e1&sideLabels=8B5CF6&sideNums=ffffff" \
+                "assets/streak.svg"
+
+          # Activity graph
+          fetch "https://github-readme-activity-graph.vercel.app/graph?username=${USER}&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity&bg_color=0d1117&color=38BDF8&line=8B5CF6&point=F472B6&title_color=38BDF8" \
+                "assets/activity.svg"
+
+          # Trophy
+          fetch "https://github-profile-trophy.vercel.app/?username=${USER}&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=12&margin-h=12" \
+                "assets/trophy.svg"
+
+          ls -la assets/
+
+      - name: Commit cached SVGs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --staged --quiet; then
+            echo "No SVG changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(stats): refresh cached SVGs [skip ci]"
+          git push
