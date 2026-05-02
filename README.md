@@ -131,20 +131,6 @@ User authentication and management system.
 
 ---
 
-### [aegis](https://github.com/MiChongs/aegis)
-
-High-performance multi-tenant user platform with workflow orchestration.
-
-<p>
-  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/aegis?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/aegis?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/aegis?style=flat-square&logo=go&logoColor=white&color=00ADD8&labelColor=0d1117" />
-</p>
-
-`Go` &middot; `Gin` &middot; `PostgreSQL` &middot; `Redis` &middot; `NATS` &middot; `Temporal`
-
----
-
 ### [box.app](https://github.com/MiChongs/box.app)
 
 Android application project.
@@ -156,6 +142,20 @@ Android application project.
 </p>
 
 `Kotlin` &middot; `Android`
+
+---
+
+### [aegis](https://github.com/MiChongs/aegis)
+
+High-performance multi-tenant user platform with workflow orchestration.
+
+<p>
+  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/aegis?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/aegis?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/aegis?style=flat-square&logo=go&logoColor=white&color=00ADD8&labelColor=0d1117" />
+</p>
+
+`Go` &middot; `Gin` &middot; `PostgreSQL` &middot; `Redis` &middot; `NATS` &middot; `Temporal`
 
 ---
 
