@@ -117,20 +117,6 @@ The universal proxy platform — personal fork tracking upstream.
 
 ---
 
-### [user_system](https://github.com/MiChongs/user_system)
-
-User authentication and management system.
-
-<p>
-  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/user_system?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/user_system?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/user_system?style=flat-square&logoColor=white&color=38BDF8&labelColor=0d1117" />
-</p>
-
-`Backend` &middot; `MySQL` &middot; `Redis`
-
----
-
 ### [box.app](https://github.com/MiChongs/box.app)
 
 Android application project.
@@ -142,6 +128,20 @@ Android application project.
 </p>
 
 `Kotlin` &middot; `Android`
+
+---
+
+### [user_system](https://github.com/MiChongs/user_system)
+
+User authentication and management system.
+
+<p>
+  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/user_system?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/user_system?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/user_system?style=flat-square&logoColor=white&color=38BDF8&labelColor=0d1117" />
+</p>
+
+`Backend` &middot; `MySQL` &middot; `Redis`
 
 ---
 
