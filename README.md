@@ -1,10 +1,4 @@
 <p align="center">
-  <a href="https://github.com/MiChongs">
-    <img src="./.github/assets/profile-banner.svg" alt="川意 · MiChongs — Backend and Systems Developer" width="100%" />
-  </a>
-</p>
-
-<p align="center">
   <a href="https://github.com/MiChongs?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/MiChongs?style=flat-square&logo=github&logoColor=white&label=Followers&color=0EA5E9&labelColor=0D1117" /></a>
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=MiChongs&style=flat-square&color=22C55E&label=Profile+Views" />
   <a href="https://github.com/MiChongs?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/MiChongs?style=flat-square&logo=github&logoColor=white&label=Total%20Stars&color=F59E0B&labelColor=0D1117&affiliations=OWNER" /></a>
