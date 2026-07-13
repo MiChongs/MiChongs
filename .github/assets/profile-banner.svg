@@ -54,23 +54,23 @@
     <path d="M1146 50V510" stroke="white"/>
   </g>
 
-  <text x="92" y="78" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="0.32em">DEVELOPER POSTER / 2026</text>
+  <text x="92" y="78" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="0.32em">BUILDING IN PUBLIC / SINCE 2019</text>
   <text x="92" y="172" fill="#F8FAFC" font-family="Microsoft YaHei, PingFang SC, Noto Sans SC, Segoe UI, sans-serif" font-size="108" font-weight="800">川意</text>
   <text x="96" y="214" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="0.14em">MICHONGS</text>
-  <text x="92" y="264" fill="#CBD5E1" font-family="Microsoft YaHei, PingFang SC, Noto Sans SC, Segoe UI, sans-serif" font-size="28" font-weight="600">长江工程职业技术学院</text>
-  <text x="92" y="318" fill="#A5B4C3" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="500">Go Backend Builder / Kotlin Explorer / Platform-oriented Engineering</text>
-  <text x="92" y="360" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Building high-performance systems with clean boundaries, stable architecture, and maintainable service design.</text>
+  <text x="92" y="264" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">BACKEND · SYSTEMS · OPEN SOURCE</text>
+  <text x="92" y="318" fill="#A5B4C3" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="500">Go / Rust / Kotlin / Platform Engineering</text>
+  <text x="92" y="360" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Building reliable software with clear boundaries, measurable performance, and long-term maintainability.</text>
 
   <g>
     <rect x="92" y="404" width="172" height="82" rx="22" fill="url(#panel)" stroke="url(#panelStroke)"/>
     <text x="122" y="438" fill="#86EFAC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em">FOCUS</text>
-    <text x="122" y="470" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Go / PgSQL</text>
+    <text x="122" y="470" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Go / Rust</text>
   </g>
 
   <g>
     <rect x="284" y="404" width="172" height="82" rx="22" fill="url(#panel)" stroke="url(#panelStroke)"/>
-    <text x="314" y="438" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em">SYSTEM</text>
-    <text x="314" y="470" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Aegis</text>
+    <text x="314" y="438" fill="#7DD3FC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em">SYSTEMS</text>
+    <text x="314" y="470" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800">Network</text>
   </g>
 
   <g>
