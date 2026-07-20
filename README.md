@@ -26,7 +26,7 @@
 
 ## About Me
 
-- **Based in** Wuhan, Hubei, China
+- **Based in** Singapore
 - **Building** backend platforms, API gateways, proxy tooling, and developer-facing products
 - **Exploring** distributed workflows, service orchestration, networking, system proxies, and AI-assisted engineering
 - **Engineering taste** low coupling · explicit boundaries · predictable behavior · measurable performance
