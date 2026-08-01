@@ -105,20 +105,6 @@
 
 <!-- FEATURED:START -->
 
-### [karpov-gateway](https://github.com/MiChongs/karpov-gateway)
-
-REST API gateway and management console with OAuth2, TOTP 2FA, and an encrypted credential pool.
-
-<p>
-  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/karpov-gateway?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/karpov-gateway?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/karpov-gateway?style=flat-square&logo=go&logoColor=white&color=00ADD8&labelColor=0d1117" />
-</p>
-
-`Go` &middot; `Gin` &middot; `gRPC` &middot; `Next.js` &middot; `PostgreSQL` &middot; `Redis`
-
----
-
 ### [WutherCore](https://github.com/MiChongs/WutherCore)
 
 Rust proxy core with friendly YAML, smart node selection, and Android transparent proxy support.
