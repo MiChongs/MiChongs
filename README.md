@@ -147,20 +147,6 @@ High-performance multi-tenant user platform with workflow orchestration.
 
 ---
 
-### [Proxy-RS](https://github.com/MiChongs/Proxy-RS)
-
-Cross-platform sing-box and mihomo manager with native services, a Ratatui TUI, tray, telemetry, and CLI.
-
-<p>
-  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/Proxy-RS?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/Proxy-RS?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/Proxy-RS?style=flat-square&logo=rust&logoColor=white&color=CE422B&labelColor=0d1117" />
-</p>
-
-`Rust` &middot; `Ratatui` &middot; `CLI` &middot; `Networking`
-
----
-
 ### [Leaf-IDE](https://github.com/MiChongs/Leaf-IDE)
 
 Modern Android IDE supporting web and native projects.
@@ -172,6 +158,20 @@ Modern Android IDE supporting web and native projects.
 </p>
 
 `Kotlin` &middot; `Android` &middot; `Developer Tools`
+
+---
+
+### [Proxy-RS](https://github.com/MiChongs/Proxy-RS)
+
+Cross-platform sing-box and mihomo manager with native services, a Ratatui TUI, tray, telemetry, and CLI.
+
+<p>
+  <img alt="Stars" src="https://img.shields.io/github/stars/MiChongs/Proxy-RS?style=flat-square&logo=github&logoColor=white&label=Stars&color=F59E0B&labelColor=0d1117" />
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/MiChongs/Proxy-RS?style=flat-square&logo=git&logoColor=white&label=Updated&color=8B5CF6&labelColor=0d1117" />
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/MiChongs/Proxy-RS?style=flat-square&logo=rust&logoColor=white&color=CE422B&labelColor=0d1117" />
+</p>
+
+`Rust` &middot; `Ratatui` &middot; `CLI` &middot; `Networking`
 
 ---
 
