@@ -3,18 +3,21 @@
 Rebuild the font subsets used by build.py.
 
 The SVG panels draw text as glyph outlines, so only the glyphs that can ever
-appear are kept. Latin fonts keep a generous Latin + symbols range (dynamic
-data is always Latin); CJK fonts keep exactly the characters found in
-build.py, so run this again after adding new Chinese text there.
+appear are kept. Latin fonts keep a generous Latin and symbols range, since
+dynamic data is always Latin. Noto Serif SC (the seal) keeps exactly the
+Chinese characters found in build.py and Ma Shan Zheng (the hero brush
+character) keeps 川意, so run this again after adding Chinese text there.
 
 Sources (all SIL OFL 1.1):
   Geist           https://www.npmjs.com/package/geist  (dist/fonts/geist-sans)
   JetBrains Mono  https://github.com/JetBrains/JetBrainsMono
-  Noto Sans SC    https://github.com/google/fonts/tree/main/ofl/notosanssc
   Noto Serif SC   https://github.com/google/fonts/tree/main/ofl/notoserifsc
+  Ma Shan Zheng   https://github.com/google/fonts/tree/main/ofl/mashanzheng
 
 Usage:
-  python make_fonts.py --geist DIR --jbm DIR --noto-sans FILE --noto-serif FILE
+  python make_fonts.py [--geist DIR] [--jbm DIR] [--noto-serif FILE] [--brush FILE]
+
+Every option is independent, so only the fonts that changed need rebuilding.
 """
 from __future__ import annotations
 
@@ -38,6 +41,7 @@ LATIN = (
     + [0x276F, 0x2713, 0x2715]
 )
 CJK_RE = re.compile(r"[　-〿㐀-鿿＀-￯]")
+BRUSH = "川意"  # the brush face is only used for the hero calligraphy
 
 
 def write_subset(font: TTFont, codepoints: list[int], out: Path) -> None:
@@ -62,21 +66,24 @@ def static(path: Path, wght: int | None = None) -> TTFont:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--geist", type=Path, required=True)
-    ap.add_argument("--jbm", type=Path, required=True)
-    ap.add_argument("--noto-sans", type=Path, required=True)
-    ap.add_argument("--noto-serif", type=Path, required=True)
+    ap.add_argument("--geist", type=Path)
+    ap.add_argument("--jbm", type=Path)
+    ap.add_argument("--noto-serif", type=Path)
+    ap.add_argument("--brush", type=Path)
     args = ap.parse_args()
 
-    for weight in ("Regular", "Medium", "SemiBold"):
-        write_subset(static(args.geist / f"Geist-{weight}.ttf"), LATIN, HERE / f"Geist-{weight}.ttf")
-    for weight in ("Regular", "Bold"):
-        write_subset(static(args.jbm / f"JetBrainsMono-{weight}.ttf"), LATIN, HERE / f"JetBrainsMono-{weight}.ttf")
+    if args.geist:
+        for weight in ("Regular", "Medium", "SemiBold"):
+            write_subset(static(args.geist / f"Geist-{weight}.ttf"), LATIN, HERE / f"Geist-{weight}.ttf")
+    if args.jbm:
+        for weight in ("Regular", "Bold"):
+            write_subset(static(args.jbm / f"JetBrainsMono-{weight}.ttf"), LATIN, HERE / f"JetBrainsMono-{weight}.ttf")
 
     cjk = sorted({ord(c) for c in CJK_RE.findall(BUILD.read_text(encoding="utf-8"))})
-    cjk += list(range(0x20, 0x7F)) + [0xB7]  # mixed text such as "加入 GitHub"
-    write_subset(static(args.noto_sans, 400), cjk, HERE / "NotoSansSC-Regular.ttf")
-    write_subset(static(args.noto_serif, 900), cjk, HERE / "NotoSerifSC-Black.ttf")
+    if args.noto_serif:
+        write_subset(static(args.noto_serif, 900), cjk, HERE / "NotoSerifSC-Black.ttf")
+    if args.brush:
+        write_subset(static(args.brush), [ord(c) for c in BRUSH], HERE / "MaShanZheng-Regular.ttf")
 
 
 if __name__ == "__main__":

@@ -35,26 +35,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r .github/profile/requirements.txt
 
-      # ---- Hero, whoami, featured cards, toolbox, river (dark + light) ----
+      # Every panel (dark and light), the contribution calendar and the project cards
       - name: Build panels and featured projects
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python .github/profile/build.py
 
-      # ---- 3D contribution calendar ----
-      - name: Build 3D contribution calendar
-        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          MAX_REPOS: 300
-          SETTING_JSON: .github/profile/contrib-3d.json
-
       - name: Commit changes if any
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets profile-3d-contrib
+          git add -A README.md assets
           if git diff --staged --quiet; then
             echo "Nothing changed."
             exit 0
