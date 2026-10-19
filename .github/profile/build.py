@@ -15,7 +15,6 @@ Run in CI:     .github/workflows/profile.yml
 from __future__ import annotations
 
 import datetime as dt
-import functools
 import html
 import json
 import math
@@ -29,8 +28,6 @@ from pathlib import Path
 from typing import Any
 
 import uharfbuzz as hb
-from fontTools.pens.pointInsidePen import PointInsidePen
-from fontTools.pens.recordingPen import RecordingPen
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.ttLib import TTFont
 
@@ -154,13 +151,13 @@ THEMES: dict[str, dict[str, Any]] = {
     "dark": {
         "panel": "#0d1117", "border": "#262c35", "line": "#3d4450", "faint": "#151a21",
         "text": "#e6edf3", "sub": "#9ca6b1", "muted": "#68717c", "chip": "#151b23",
-        "fg": "#ffffff", "tile": "#242938", "zhu": "#f2704f", "seal": "#c63f2b",
+        "fg": "#ffffff", "tile": "#242938", "zhu": "#f2704f",
         "ink": ["#161b22", "#2a313b", "#4b5461", "#868f9b", "#d2d8df"],
     },
     "light": {
         "panel": "#ffffff", "border": "#dde2e7", "line": "#c3cad2", "faint": "#f6f8fa",
         "text": "#1f2328", "sub": "#57606a", "muted": "#8c959f", "chip": "#f6f8fa",
-        "fg": "#000000", "tile": "#F4F2ED", "zhu": "#c63b24", "seal": "#c43b2a",
+        "fg": "#000000", "tile": "#F4F2ED", "zhu": "#c63b24",
         "ink": ["#ebeef1", "#c9d0d7", "#97a0aa", "#58616b", "#22272e"],
     },
 }
@@ -211,8 +208,6 @@ FONTS = {
     "sans-sb": Font("b", "Geist-SemiBold.ttf"),
     "mono": Font("j", "JetBrainsMono-Regular.ttf"),
     "mono-b": Font("k", "JetBrainsMono-Bold.ttf"),
-    "serif": Font("h", "NotoSerifSC-Black.ttf"),
-    "brush": Font("q", "MaShanZheng-Regular.ttf"),
 }
 
 
@@ -342,122 +337,22 @@ def catmull_rom(points: list[tuple[float, float]]) -> str:
     return d
 
 
-def seal(svg: SVG, x: float, y: float, size: float = 22, stamp_at: float | None = None) -> None:
-    """Vermilion name seal with 川意 cut out of it, stacked vertically; size * 1.48 wide."""
-    t = svg.t
-    pad = size * 0.24
-    w, h = size + pad * 2, size * 2 + pad * 2.2
-    fid = svg.uid("wf")
-    svg.defs.append(
-        f'<filter id="{fid}" x="-10%" y="-10%" width="120%" height="120%">'
-        f'<feTurbulence type="fractalNoise" baseFrequency="0.12" numOctaves="2" seed="11" result="n"/>'
-        f'<feDisplacementMap in="SourceGraphic" in2="n" scale="{size / 14:.2f}" xChannelSelector="R" yChannelSelector="G" result="d"/>'
-        f'<feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="2" seed="5" result="s"/>'
-        f'<feColorMatrix in="s" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14 10.4" result="a"/>'
-        f'<feComposite in="d" in2="a" operator="in"/></filter>')
-    mid = svg.uid("sm")
-    g1, _ = svg.glyph_run(x + w / 2, y + pad + size * 0.86, "川", "serif", size, anchor="middle")
-    g2, _ = svg.glyph_run(x + w / 2, y + pad * 1.2 + size * 1.86, "意", "serif", size, anchor="middle")
-    svg.defs.append(f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="{x - 4}" y="{y - 4}" width="{w + 8}" height="{h + 8}">'
-                    f'<rect x="{x - 4}" y="{y - 4}" width="{w + 8}" height="{h + 8}" fill="#fff"/>'
-                    f'<g fill="#000">{g1}{g2}</g></mask>')
-    cls = ""
-    if stamp_at is not None:
-        svg.css.append("@keyframes stamp{from{opacity:0;transform:scale(1.3)}}"
-                       f".stamp{{transform-box:fill-box;transform-origin:center;"
-                       f"animation:stamp .32s cubic-bezier(.3,1.4,.5,1) {stamp_at:.2f}s backwards}}")
-        cls = ' class="stamp"'
-    svg.add(f'<g{cls}><g filter="url(#{fid})"><rect x="{x}" y="{y}" width="{w:.1f}" height="{h:.1f}" rx="{size * 0.16:.1f}" '
-            f'fill="{t["seal"]}" mask="url(#{mid})"/></g></g>')
-
-
-@functools.cache
-def brush_glyph(ch: str) -> list[tuple[str, list[tuple[float, float]], float]]:
-    """Split a brush glyph into its contours, each with a rough centreline for the writing animation.
-
-    Returns (svg path in font units, centreline from top to bottom, widest slice) per contour,
-    ordered left to right, which is also the stroke order of 川.
-    """
-    f = FONTS["brush"]
-    name = f.tt.getBestCmap()[ord(ch)]
-    rec = RecordingPen()
-    f.glyphs[name].draw(rec)
-    contours, cur = [], []
-    for op, args in rec.value:
-        cur.append((op, args))
-        if op in ("closePath", "endPath"):
-            contours.append(cur)
-            cur = []
-    out = []
-    for c in contours:
-        part = RecordingPen()
-        part.value = c
-        pen = SVGPathPen(f.glyphs, ntos=lambda v: f"{v:.0f}")
-        part.replay(pen)
-        pts = [p for _, args in c for p in args]
-        x0, x1 = min(p[0] for p in pts), max(p[0] for p in pts)
-        y0, y1 = min(p[1] for p in pts), max(p[1] for p in pts)
-        line, widest = [], 0.0
-        y = y1 - 6
-        while y > y0 + 6:
-            inside = []
-            x = x0
-            while x <= x1:
-                probe = PointInsidePen(f.glyphs, (x, y))
-                part.replay(probe)
-                if probe.getResult():
-                    inside.append(x)
-                x += 3
-            if inside:
-                line.append(((inside[0] + inside[-1]) / 2, y))
-                widest = max(widest, inside[-1] - inside[0])
-            y -= 12
-        out.append((pen.getCommands(), line, widest, x0))
-    out.sort(key=lambda c: c[3])
-    return [(d, line, widest) for d, line, widest, _ in out]
-
-
 # ----------------------------------------------------------------------
 # Panels
 # ----------------------------------------------------------------------
 def hero(t: dict[str, Any]) -> SVG:
-    h = 264
-    svg = SVG(W, h, t, f"{USER} (川意), {ROLE.lower()}")
+    h = 224
+    svg = SVG(W, h, t, f"{USER}, {ROLE.lower()}")
     svg.panel()
 
-    svg.text(54, 126, USER, "sans-sb", 58, t["text"], ls=-1.8)
-    svg.text(57, 166, ROLE, "sans", 19, t["sub"], ls=-0.1)
+    svg.text(54, 106, USER, "sans-sb", 58, t["text"], ls=-1.8)
+    svg.text(57, 146, ROLE, "sans", 19, t["sub"], ls=-0.1)
     x = 58
     for name, color in LANGS:
-        svg.add(f'<circle cx="{x + 4}" cy="215.5" r="4" fill="{color}"/>')
-        x += 14 + svg.text(x + 14, 220, name, "sans-m", 13.5, t["sub"]) + 22
-    svg.add(f'<rect x="{x - 4}" y="207" width="1" height="17" fill="{t["border"]}"/>')
-    svg.text(x + 14, 220, ZONE, "mono", 12, t["muted"])
-
-    # 川 written stroke by stroke, then the seal is stamped
-    size = 210
-    k = size / FONTS["brush"].upm
-    gx, gy = 586, 202
-    plan = [(0.25, 0.55), (0.95, 0.35), (1.4, 0.62)]  # (delay, duration) per stroke
-    for i, ((d, line, widest), (delay, dur)) in enumerate(zip(brush_glyph("川"), plan)):
-        pts = [(gx + px * k, gy - py * k) for px, py in line]
-        (ax, ay), (bx, by) = pts[0], pts[1]
-        n = math.hypot(bx - ax, by - ay) or 1
-        pts.insert(0, (ax - (bx - ax) / n * 16, ay - (by - ay) / n * 16))
-        (ax, ay), (bx, by) = pts[-1], pts[-2]
-        n = math.hypot(bx - ax, by - ay) or 1
-        pts.append((ax + (ax - bx) / n * 16, ay + (ay - by) / n * 16))
-        length = sum(math.hypot(q[0] - p[0], q[1] - p[1]) for p, q in zip(pts, pts[1:])) + 4
-        mid = svg.uid("bm")
-        svg.css.append(f"@keyframes w{i}{{from{{stroke-dashoffset:{length:.0f}}}}}"
-                       f".w{i}{{stroke-dasharray:{length:.0f} {length + 20:.0f};"
-                       f"animation:w{i} {dur}s cubic-bezier(.5,.05,.4,1) {delay}s backwards}}")
-        svg.defs.append(f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{h}">'
-                        f'<path class="w{i}" d="{catmull_rom(pts)}" stroke="#fff" '
-                        f'stroke-width="{widest * k + 14:.0f}"/></mask>')
-        svg.add(f'<g mask="url(#{mid})"><path transform="translate({gx} {gy}) scale({k:.4f} {-k:.4f})" '
-                f'd="{d}" fill="{t["text"]}"/></g>')
-    seal(svg, 780, 146, 22, stamp_at=2.15)
+        svg.add(f'<circle cx="{x + 4}" cy="179.5" r="4" fill="{color}"/>')
+        x += 14 + svg.text(x + 14, 184, name, "sans-m", 13.5, t["sub"]) + 22
+    svg.add(f'<rect x="{x - 4}" y="171" width="1" height="17" fill="{t["border"]}"/>')
+    svg.text(x + 14, 184, ZONE, "mono", 12, t["muted"])
     return svg
 
 
@@ -737,12 +632,6 @@ def calendar(t: dict[str, Any], stats: dict[str, Any]) -> SVG:
     return svg
 
 
-def footer(t: dict[str, Any]) -> SVG:
-    svg = SVG(W, 96, t, "川意 seal")
-    seal(svg, W / 2 - 18 * 0.74, 16, 18)
-    return svg
-
-
 # ----------------------------------------------------------------------
 # Data
 # ----------------------------------------------------------------------
@@ -865,7 +754,6 @@ def main() -> int:
             "stack": stack(t, theme),
             "river": river(t),
             "activity": calendar(t, stats),
-            "footer": footer(t),
         }
         for key, title, note in SECTIONS:
             panels[f"h-{key}"] = section(t, title, note)

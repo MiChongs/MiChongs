@@ -7,7 +7,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/hero-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/hero-light.svg">
-    <img alt="MiChongs (川意), backend and systems developer" src="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/hero-dark.svg" width="100%">
+    <img alt="MiChongs, backend and systems developer" src="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/hero-dark.svg" width="100%">
   </picture>
 </p>
 
@@ -92,13 +92,5 @@
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/activity-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/activity-light.svg">
     <img alt="Contribution calendar for the last year" src="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/activity-dark.svg" width="100%">
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/footer-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/footer-light.svg">
-    <img alt="川意 seal" src="https://raw.githubusercontent.com/MiChongs/MiChongs/main/assets/footer-dark.svg" width="100%">
   </picture>
 </p>
