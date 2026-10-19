@@ -62,7 +62,7 @@ WHOAMI = [
     ("AI pair", "Claude Code · Codex"),
     ("Uptime", "{uptime}"),
     None,
-    ("GitHub", "{repos} repos · {stars} stars · {followers} followers"),
+    ("GitHub", "{repos} original repos · {stars} stars · {followers} followers"),
     ("Activity", "{contribs} contributions in the past year"),
     ("Motto", "始于热爱，忠于长期主义"),
 ]
@@ -765,9 +765,9 @@ query($login: String!, $after: String) {
   user(login: $login) {
     followers { totalCount }
     contributionsCollection { contributionCalendar { totalContributions } }
-    repositories(first: 100, after: $after, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false) {
+    repositories(first: 100, after: $after, ownerAffiliations: OWNER, privacy: PUBLIC) {
       pageInfo { hasNextPage endCursor }
-      nodes { name stargazerCount forkCount pushedAt primaryLanguage { name color } }
+      nodes { name isFork stargazerCount forkCount pushedAt primaryLanguage { name color } }
     }
   }
 }
@@ -800,8 +800,8 @@ def fetch() -> dict[str, Any]:
             break
         after = page["pageInfo"]["endCursor"]
     return {
-        "repos": len(repos),
-        "stars": sum(r["stargazerCount"] for r in repos),
+        "repos": sum(not r["isFork"] for r in repos),
+        "stars": sum(r["stargazerCount"] for r in repos),  # forks included, like the 3D calendar
         "followers": user["followers"]["totalCount"],
         "contribs": user["contributionsCollection"]["contributionCalendar"]["totalContributions"],
         "by_name": {r["name"]: r for r in repos},
